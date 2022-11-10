@@ -1,4 +1,4 @@
-import './App.css';
+import "./App.css";
 import { useState } from "react";
 
 function App(): JSX.Element {
@@ -7,8 +7,12 @@ function App(): JSX.Element {
   const [counterVar, setCounterVar] = useState<number>(initCounterVar); // 👈 Hook `useState` the actual variable & function to mutate the variable
 
   // Functions
-  const increaseCounterVar = (): void => { setCounterVar(counterVar + 1) }; // 👈 Example of using the mutate
-  const decreaseCounterVar = (): void => { setCounterVar(counterVar - 1) };
+  const increaseCounterVar = (): void => {
+    setCounterVar(counterVar + 1);
+  }; // 👈 Example of using the mutate
+  const decreaseCounterVar = (): void => {
+    setCounterVar(counterVar - 1);
+  };
 
   // Render
   return (
@@ -16,10 +20,11 @@ function App(): JSX.Element {
     <div className="App">
       <button onClick={increaseCounterVar}>increase</button>
       <button onClick={decreaseCounterVar}>decrease</button>
-      <button onClick={(): void => setCounterVar(initCounterVar)}>reset</button> {/* Possible to passe defined or lambda function inside the event */}
+      <button onClick={(): void => setCounterVar(initCounterVar)}>reset</button>
+      {/* 👆 Possible to passe defined or lambda function inside the event 👆 */}
       {counterVar}
     </div>
   );
-};
+}
 
 export default App;
