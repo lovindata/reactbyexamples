@@ -6,12 +6,15 @@ import { useState } from "react";
 // Can return an object or array for choosing variable name (Please check at `return` object)
 export const useCount = (
   initialCount: number = 0
-): {
-  currentCount: number;
-  increaseCount: () => void;
-  decreaseCount: () => void;
-  resetCount: () => void;
-} => {
+):
+  | {
+      currentCount: number;
+      increaseCount: () => void;
+      decreaseCount: () => void;
+      resetCount: () => void;
+    }
+  // 👇 Type added for the array version
+  | (number | (() => void))[] => {
   // Define
   const [count, setCount] = useState<number>(initialCount);
 
@@ -22,6 +25,6 @@ export const useCount = (
   const resetCount = (): void => setCount(initialCount);
 
   // Return variables from the hook
-  // return [currentCount, increaseCount, decreaseCount, resetCount] // 👈 Can allow direct rename the variable
-  return { currentCount, increaseCount, decreaseCount, resetCount }; // 👈 Cannot allow direct rename the variable but with `:` can
+  // return { currentCount, increaseCount, decreaseCount, resetCount }; // 👈 Cannot allow direct rename the variable but with `:` can
+  return [currentCount, increaseCount, decreaseCount, resetCount]; // 👈 Can allow direct rename the variable
 };
