@@ -9,8 +9,8 @@ import ReactDOM from "react-dom/client";
 // import App from "./_5_router/App";
 // import App from "./_6_contexthook/App";
 // import App from "./_7_queryhook/App";
-import App from "./_8_formhook/App";
-// import App from './_9_customhook/App';
+// import App from "./_8_formhook/App";
+import App from "./_9_customhook/App";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

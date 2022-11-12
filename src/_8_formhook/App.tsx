@@ -30,7 +30,14 @@ const RegistrationForm = (): JSX.Element => {
   // `register` -> For receiving data from a `form`
   // `handleSubmit` -> Called function to execute `onSubmit`
   // `formState` -> Current `formState`
-  const { register, handleSubmit, formState } = useForm({
+  type AppUser = {
+    username: string;
+    email: string;
+    age: number;
+    password: number;
+    confirmPassword: string;
+  };
+  const { register, handleSubmit, formState } = useForm<AppUser>({
     resolver: yupResolver(schemaYop), // ⚠️ From Yop to React
   });
 

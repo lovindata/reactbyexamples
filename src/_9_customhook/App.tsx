@@ -3,7 +3,6 @@ import { useCount } from "./useCount";
 
 function App(): JSX.Element {
   // Use the custom hook
-  // const [counter, increase, decrease, reset] = useCount(); // If `array` version
   const {
     currentCount: counter,
     increaseCount: increase,
