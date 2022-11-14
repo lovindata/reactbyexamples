@@ -1,30 +1,11 @@
-import { configureStore, createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
+import loginSlice from "./loginSlice";
 
-// Initialization (fields to get via `useSelector`)
-export interface LoginState {
-    isLogged: boolean;
-    sessionToken?: string
-}
-const initialState: LoginState = { isLogged: false }
-
-// Reducers
-const loginSlice = createSlice({
-    name: "loginState",
-    initialState,
-    reducers: {
-        login: (state, action: PayloadAction<string>) => {
-            state = { isLogged: true, sessionToken: action.payload }
-        },
-        logout: (state) => {
-            state = initialState
-        }
-    }
-});
-
-// Exporting (To use via `useDispatch`)
-export const { login, logout } = loginSlice.actions;
 export const store = configureStore({
-    reducer: {
-        loginState: loginSlice.reducer
-    }
+  reducer: { login: loginSlice },
 });
+
+// Infer the `RootState` and `AppDispatch` types from the store itself
+export type RootState = ReturnType<typeof store.getState>;
+// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
+export type AppDispatch = typeof store.dispatch;

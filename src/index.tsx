@@ -11,16 +11,11 @@ import ReactDOM from "react-dom/client";
 // import App from "./_7_queryhook/App";
 // import App from "./_8_formhook/App";
 // import App from "./_9_customhook/App";
-// import App from "./_10_reduxtoolkit/App";
 import App from "./_10_reduxtoolkit/App";
-import { store } from "./_10_reduxtoolkit/store";
-import { Provider } from "react-redux";
 
 const root: ReactDOM.Root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
-  <Provider store={store}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </Provider>
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );

@@ -1,5 +1,6 @@
 import "./App.css";
-import { store, login, logout, LoginState } from "./store";
+import { RootState, store } from "./store";
+import { login, logout } from "./loginSlice";
 import { useDispatch, useSelector } from "react-redux";
 import React, { useState } from "react";
 import { Provider } from "react-redux";
@@ -18,15 +19,15 @@ function App(): JSX.Element {
 // LoggedOutIn component
 const LoggedOutOrIn = (): JSX.Element => {
   // Logic
-  const loginState = useSelector((state: LoginState) => state);
+  const loginState = useSelector((state: RootState) => state.login);
   const dispatch = useDispatch();
   const [hdleInSessTok, setHdleInSessTok] = useState<string>("");
 
   // Render
-  if (loginState.isLogged)
+  if (loginState.value.isLogged)
     return (
       <div>
-        <p>Hello {loginState.sessionToken}!</p>
+        <p>Hello {loginState.value.sessionToken}!</p>
         <button onClick={() => dispatch(logout())}>Logout</button>
       </div>
     );
