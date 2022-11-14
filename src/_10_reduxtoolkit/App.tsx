@@ -24,20 +24,22 @@ const LoggedOutOrIn = (): JSX.Element => {
   const [hdleInSessTok, setHdleInSessTok] = useState<string>("");
 
   // Render
-  if (loginState.value.isLogged)
-    return (
-      <div>
-        <p>Hello {loginState.value.sessionToken}!</p>
-        <button onClick={() => dispatch(logout())}>Logout</button>
-      </div>
-    );
-  else
-    return (
-      <div>
-        <input onChange={(event: React.ChangeEvent<HTMLInputElement>) => setHdleInSessTok(event.target.value)}></input>
-        <button onClick={() => dispatch(login(hdleInSessTok))}>Login</button>
-      </div>
-    );
+  return (
+    <div>
+      {loginState.value.isLogged ? (
+        <>
+          <p>Hello {loginState.value.sessionToken}!</p>
+          <button onClick={() => dispatch(logout())}>Logout</button>
+        </>
+      ) : (
+        <>
+          <input
+            onChange={(event: React.ChangeEvent<HTMLInputElement>) => setHdleInSessTok(event.target.value)}></input>
+          <button onClick={() => dispatch(login(hdleInSessTok))}>Login</button>
+        </>
+      )}
+    </div>
+  );
 };
 
 export default App;
