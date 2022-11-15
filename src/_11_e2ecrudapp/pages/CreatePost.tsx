@@ -23,7 +23,7 @@ export const CreatePost = (): JSX.Element => {
   });
   const hdlePost = (postData: PostType) => {
     console.log(postData);
-    // ⚠️ TODO continue here for database persistency
+    // ⚠️ TODO continue here for database persistency (https://youtu.be/qzea8B4uwbg?list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR&t=1557)
   };
 
   // Render
