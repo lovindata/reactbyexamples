@@ -4,28 +4,28 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 
 // Firestore related imports
-import { dbDriver } from "../config/firebaseActual";
+import { dbDriver } from "../../config/firebaseActual";
 import { addDoc, collection } from "firebase/firestore";
 
 // Google authentication imports
-import { auth } from "../config/firebaseActual";
+import { auth } from "../../config/firebaseActual";
 import { useAuthState } from "react-firebase-hooks/auth";
 
 // Routing imports
 import { useNavigate } from "react-router-dom";
 
-// Component
-export const CreatePost = (): JSX.Element => {
-  // Schema logic
-  interface PostType {
-    title: string;
-    description: string;
-  }
-  const postSch = yup.object().shape({
-    title: yup.string().required("Please add a title to your post."),
-    description: yup.string(),
-  });
+// Schema logic
+interface PostType {
+  title: string;
+  description: string;
+}
+const postSch = yup.object().shape({
+  title: yup.string().required("Please add a title to your post."),
+  description: yup.string(),
+});
 
+// Component
+export const PostForm = (): JSX.Element => {
   // Hooks
   const {
     register,

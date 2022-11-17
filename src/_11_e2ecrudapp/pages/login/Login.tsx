@@ -1,5 +1,5 @@
 // Authentication imports
-import { auth, provider } from "../config/firebaseActual";
+import { auth, provider } from "../../config/firebaseActual";
 import { signInWithPopup } from "firebase/auth";
 
 // Routing imports
