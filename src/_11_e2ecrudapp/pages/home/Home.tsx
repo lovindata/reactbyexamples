@@ -25,7 +25,9 @@ export const Home = (): JSX.Element => {
     // Get posts collection data from DB
     const getPostsHdle = async () => {
       const data = await getDocs(collection(dbDriver, "posts"));
-      const formattedData: PostInfoType[] = data.docs.map((doc) => doc.data() as PostInfoType);
+      const formattedData: PostInfoType[] = data.docs.map((doc) => {
+        return { ...doc.data(), postId: doc.id } as PostInfoType;
+      });
       setPostInfos(formattedData);
     };
 
@@ -36,8 +38,10 @@ export const Home = (): JSX.Element => {
   // Render
   return (
     <div>
-      {postInfos.map((postInfo: PostInfoType) => (
-        <PostInfo postInfo={postInfo} />
+      {postInfos.map((postInfo: PostInfoType, key) => (
+        <div key={key}>
+          <PostInfo postInfo={postInfo} />
+        </div>
       ))}
     </div>
   );
