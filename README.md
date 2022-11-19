@@ -18,11 +18,11 @@ So do not hesitate to fork this git repository and execute them on your own comp
 
 <ins>Remarks</ins>:
 
-- NodeJs needs to be install on your computer and I used [VSCode](https://code.visualstudio.com/) as my IDE.
+- NodeJs needs to be install on your computer and I used [VSCode](https://code.visualstudio.com/) as my IDE
 - For the links below, when necessary please checkout imports dependency
 - `Social Media Application` is deployed, you can test it in **Live 🔴**
   - **\[UP✅\]** - [Social Media Application](https://reactbyexamples-87316.web.app/)
-  - ⚠️ _This project was only made for personal learning & fun, and it is not intented to be production ready. So, you are personally responsible for all the actions and what you are doing with the application._
+  - ⚠️ _This project was only made for personal learning & fun, and it is not intented to be production ready. So, you are personally responsible for all the actions and what you are doing with the application_
 
 | 🔎 Subject                | 📃 Description                                                                                                                                                                       | 👾 Code snippets                                       |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------ |
