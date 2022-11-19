@@ -11,6 +11,7 @@
 # production
 /build
 firebaseActual.ts
+.firebase
 
 # misc
 .DS_Store
