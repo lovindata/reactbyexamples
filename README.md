@@ -1,46 +1,46 @@
-# Getting Started with Create React App
+# ReactByExamples - React with Typescript ✨
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Generic badge](https://img.shields.io/badge/ReactJs-18.2-darkblue.svg?style=plastic)](https://reactjs.org/)
+[![Generic badge](https://img.shields.io/badge/Typescript-4.8-blue.svg?style=plastic)](https://www.typescriptlang.org/)
+[![Generic badge](https://img.shields.io/badge/NodeJs-16.18-darkgreen.svg?style=plastic)](https://nodejs.org/en/)
 
-## Available Scripts
+![img.png](docs/front-img.png)
 
-In the project directory, you can run:
+✨👾 The objective is to do an easy-to-access codes snippets collections of important ReactJs concepts. ReactJs possesses `JSX.Element` to consider page components as functions instead of declarative HTML. Then each of these component lifecycle can be easily managed using `React Hooks`. Both `JSX.Element` and `React Hooks` are based internally on the concept on [Virtual DOM](https://reactjs.org/docs/faq-internals.html) allowing high efficient page rendering for the final user.
 
-### `npm start`
+# Table of contents 📃
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+🔎📚 For a better understanding of each subject please take the time to run the code snippets.
+They all compile & are runnable ✅.
+So do not hesitate to fork this git repository and execute them on your own computer 👍.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<ins>Remark</ins>:
 
-### `npm test`
+- NodeJs needs to be install on your computer and I used [VSCode](https://code.visualstudio.com/) as my IDE.
+- For the links below, when necessary please checkout imports dependency
+- `Social Media Application` is deployed, you can test it in **Live 🔴**
+  - **\[UP✅\]** - [Social Media Application](https://reactbyexamples-87316.web.app/)
+  - ⚠️ _This project was only made for personal learning & fun, and it is not intented to be production ready. So, you are personally responsible for all the actions and what you are doing with the application._
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| 🔎 Subject                | 📃 Description                                                                                                                                                                       | 👾 Code snippets                                       |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------ |
+| **Introduction & Basics** | _This part focuses on understanding `JSX.Element` as web page components, some `Typescript` and quick `React Router Dom` basics._                                                    | [React Components & Props](src/_0_components/App.tsx)  |
+|                           |                                                                                                                                                                                      | [Typescript HOF](src/_1_hofarray_css/App.tsx)          |
+|                           |                                                                                                                                                                                      | [React Router Dom](src/_5_router/App.tsx)              |
+| **React Hooks**           | _This part focuses on understanding all most used `React Hooks` as functions to manage components (`JSX.Element`) lifecycle. (Ordered according most used)_                          | [State Hook](src/_2_statehook/App.tsx)                 |
+|                           |                                                                                                                                                                                      | [Effect Hook](src/_4_effecthook_fetchapi/App.tsx)      |
+|                           |                                                                                                                                                                                      | [Query Hook](src/_7_queryhook/App.tsx)                 |
+|                           |                                                                                                                                                                                      | [Form Hook](src/_8_formhook/App.tsx)                   |
+|                           |                                                                                                                                                                                      | [Custom Hook](src/_9_customhook/App.tsx)               |
+| **Global data OR states** | _This part focuses on how you can to pass down data globally to components via `Context Hook` or `RTK`. (because only using `React Props` leads to unmaintainable boilerplate code)_ | [Context Hook](src/_6_contexthook/App.tsx)             |
+|                           |                                                                                                                                                                                      | [Redux Toolkit (RTK)](src/_10_reduxtoolkit/App.tsx)    |
+| **Quick projects**        | _This part contains completed good exercices to practice._                                                                                                                           | [Todo List Application](src/_3_todolistapp/App.tsx)    |
+|                           |                                                                                                                                                                                      | [Social Media Application](src/_11_e2ecrudapp/App.tsx) |
 
-### `npm run build`
+# Main highly used references 📚
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [ReactJs docs](https://reactjs.org/docs/getting-started.html)
+- [Typescript docs](https://www.typescriptlang.org/docs/)
+- [Firebase Hosting](https://firebase.google.com/docs/hosting)
+- [Firestore - NoSQL database](https://firebase.google.com/docs/firestore)
+- [PedroTech courses](https://www.youtube.com/@PedroTechnologies/featured) (👈😍 Premium quality contents to absolutely checkout)
