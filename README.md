@@ -16,7 +16,7 @@
 They all compile & are runnable ✅.
 So do not hesitate to fork this git repository and execute them on your own computer 👍.
 
-<ins>Remark</ins>:
+<ins>Remarks</ins>:
 
 - NodeJs needs to be install on your computer and I used [VSCode](https://code.visualstudio.com/) as my IDE.
 - For the links below, when necessary please checkout imports dependency
