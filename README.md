@@ -8,7 +8,7 @@
   <img src="docs/front-img.png" />
 </p>
 
-✨👾 The objective is to do an easy-to-access codes snippets collections of important ReactJs concepts. ReactJs possesses `JSX.Element` to consider page components as functions instead of declarative HTML. Then each of these component lifecycle can be easily managed using `React Hooks`. Both `JSX.Element` and `React Hooks` are based internally on the concept on [Virtual DOM](https://reactjs.org/docs/faq-internals.html) allowing high efficient page rendering for the final user.
+✨👾 The objective is to do an easy-to-access codes snippets collections of important ReactJs concepts. ReactJs possesses `JSX.Element` to consider page components as functions instead of declarative HTML. Then each of these component lifecycle can be easily managed using `React Hooks`. Both `JSX.Element` and `React Hooks` are based internally on the concept of [Virtual DOM](https://reactjs.org/docs/faq-internals.html) allowing high efficient page rendering for the final user.
 
 # Table of contents 📃
 
