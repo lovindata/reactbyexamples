@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sidebar-icon {
+    /* 
+    - `relative` means relative position according the parent element
+    - `flex` allows the element positionning == activate main & cross axis
+    - `items-center` means align according the cross axis
+    - `justify-center` means align according the main axis
+    */
+    @apply relative mx-auto mt-2 mb-2 flex h-12 w-12 items-center justify-center bg-gray-800 text-green-500 shadow-lg;
+  }
+}

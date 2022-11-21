@@ -1,7 +1,9 @@
-# ReactByExamples - React with Typescript ✨
+# ReactByExamples - React with TypeScript plus using TailwindCSS and Firebase services ✨
 
 [![Generic badge](https://img.shields.io/badge/ReactJs-18.2-darkblue.svg?style=plastic)](https://reactjs.org/)
-[![Generic badge](https://img.shields.io/badge/Typescript-4.8-blue.svg?style=plastic)](https://www.typescriptlang.org/)
+[![Generic badge](https://img.shields.io/badge/TypeScript-4.8-blue.svg?style=plastic)](https://www.typescriptlang.org/)
+[![Generic badge](https://img.shields.io/badge/TailwindCSS-3.2-lightblue.svg?style=plastic)](https://tailwindcss.com/)
+[![Generic badge](https://img.shields.io/badge/Firebase-9.14-yellow.svg?style=plastic)](https://www.npmjs.com/package/firebase)
 [![Generic badge](https://img.shields.io/badge/NodeJs-16.18-darkgreen.svg?style=plastic)](https://nodejs.org/en/)
 
 <p align="center">
@@ -26,8 +28,8 @@ So do not hesitate to fork this git repository and execute them on your own comp
 
 | 🔎 Subject                | 📃 Description                                                                                                                                                                       | 👾 Code snippets                                       |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------ |
-| **Introduction & Basics** | _This part focuses on understanding `JSX.Element` as web page components, some `Typescript` and quick `React Router Dom` basics._                                                    | [React Components & Props](src/_0_components/App.tsx)  |
-|                           |                                                                                                                                                                                      | [Typescript HOF](src/_1_hofarray_css/App.tsx)          |
+| **Introduction & Basics** | _This part focuses on understanding `JSX.Element` as web page components, some `TypeScript` and quick `React Router Dom` basics._                                                    | [React Components & Props](src/_0_components/App.tsx)  |
+|                           |                                                                                                                                                                                      | [TypeScript HOF](src/_1_hofarray_css/App.tsx)          |
 |                           |                                                                                                                                                                                      | [React Router Dom](src/_5_router/App.tsx)              |
 | **React Hooks**           | _This part focuses on understanding all most used `React Hooks` as functions to manage components (`JSX.Element`) lifecycle. (Ordered according most used)_                          | [State Hook](src/_2_statehook/App.tsx)                 |
 |                           |                                                                                                                                                                                      | [Effect Hook](src/_4_effecthook_fetchapi/App.tsx)      |
@@ -39,10 +41,24 @@ So do not hesitate to fork this git repository and execute them on your own comp
 | **Quick projects**        | _This part contains completed good exercices to practice._                                                                                                                           | [Todo List Application](src/_3_todolistapp/App.tsx)    |
 |                           |                                                                                                                                                                                      | [Social Media Application](src/_11_e2ecrudapp/App.tsx) |
 
-# Main highly used references 📚
+# References 📚
+
+## Main highly used
 
 - [ReactJs docs](https://reactjs.org/docs/getting-started.html)
-- [Typescript docs](https://www.typescriptlang.org/docs/)
+- [TypeScript docs](https://www.typescriptlang.org/docs/)
 - [Firebase Hosting](https://firebase.google.com/docs/hosting)
 - [Firestore - NoSQL database](https://firebase.google.com/docs/firestore)
+- [TailwindCSS - Getting Started](https://tailwindcss.com/docs/installation)
+- [Fireship courses](https://www.youtube.com/@Fireship)
 - [PedroTech courses](https://www.youtube.com/@PedroTechnologies/featured) (👈😍 Premium quality contents to absolutely checkout)
+
+## Sub references
+
+- [Bro Code - Learn CSS margins in 4 minutes 📏](https://youtu.be/2ZlVV0MM1a0)
+- [Tailwind Labs - 05: Composing Utilities with @apply – Tailwind CSS v2.0: From Zero to Production](https://youtu.be/TrftauE2Vyk)
+- [Fireship - CSS Flexbox in 100 Seconds](https://www.youtube.com/watch?v=K74l26pE4YA)
+
+# LogBook 🚧
+
+- Continue course https://youtu.be/pfaSUYaSgRo?t=575 (currently on hover state)
