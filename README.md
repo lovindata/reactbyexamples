@@ -40,10 +40,11 @@ So do not hesitate to fork this git repository and execute them on your own comp
 |                           |                                                                                                                                                                                      | [Redux Toolkit (RTK)](src/_10_reduxtoolkit/App.tsx)    |
 | **Quick projects**        | _This part contains completed good exercices to practice._                                                                                                                           | [Todo List Application](src/_3_todolistapp/App.tsx)    |
 |                           |                                                                                                                                                                                      | [Social Media Application](src/_11_e2ecrudapp/App.tsx) |
+| **Tailwinds CSS**         | _This part focuses on main styling concepts with Tailwind CSS._                                                                                                                      | [Basics](src/_12_tailwindcss_basics/App.tsx)           |
 
 # References 📚
 
-## Main highly used
+## Main highly used 🤩
 
 - [ReactJs docs](https://reactjs.org/docs/getting-started.html)
 - [TypeScript docs](https://www.typescriptlang.org/docs/)
@@ -53,12 +54,14 @@ So do not hesitate to fork this git repository and execute them on your own comp
 - [Fireship courses](https://www.youtube.com/@Fireship)
 - [PedroTech courses](https://www.youtube.com/@PedroTechnologies/featured) (👈😍 Premium quality contents to absolutely checkout)
 
-## Sub references
+## Sub references 👍
 
 - [Bro Code - Learn CSS margins in 4 minutes 📏](https://youtu.be/2ZlVV0MM1a0)
 - [Tailwind Labs - 05: Composing Utilities with @apply – Tailwind CSS v2.0: From Zero to Production](https://youtu.be/TrftauE2Vyk)
 - [Fireship - CSS Flexbox in 100 Seconds](https://www.youtube.com/watch?v=K74l26pE4YA)
+- [CSS - Position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+- [Margin auto for positioning elements in flex](https://stackoverflow.com/questions/33924655/position-last-flex-item-at-the-end-of-container)
 
 # LogBook 🚧
 
-- Continue course https://youtu.be/pfaSUYaSgRo?t=575 (currently on hover state)
+- Continue this course [Tailwind Crash Course](https://youtu.be/dFgzHOX84xQ?t=672)

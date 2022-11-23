@@ -13,7 +13,7 @@ import ReactDOM from "react-dom/client";
 // import App from "./_9_customhook/App";
 // import App from "./_10_reduxtoolkit/App";
 // import App from "./_11_e2ecrudapp/App";
-import App from "./_12_tailwindcss/App";
+import App from "./_12_tailwindcss_basics/App";
 
 const root: ReactDOM.Root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(

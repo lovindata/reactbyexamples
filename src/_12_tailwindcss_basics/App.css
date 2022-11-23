@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sidebar-icon {
+    /* 
+    - `relative` means relative position according the parent element
+    - `flex` allows the element positionning == activate main & cross axis
+    - `items-center` means align according the cross axis
+    - `justify-center` means align according the main axis
+    - `rounded-<?>` means changing the border
+    - `transition-all` means transition from the static to the variant state
+    - `cursor-pointer` means changing the user cursor
+    */
+    @apply relative mx-auto mt-2 mb-2 flex h-12 w-12 cursor-pointer
+    items-center justify-center rounded-3xl  bg-gray-800 text-green-500 shadow-lg
+    transition-all duration-300 ease-linear hover:rounded-xl hover:bg-green-600 hover:text-white;
+  }
+
+  .sidebar-tooltip {
+    /*
+    - `absolute` remove from parent content and have its own content position
+    - `min-w-max` content on width only
+    - `origin-left` for the transitionning from left
+    - `scale-0` means all size 0 (in percentage)
+    */
+    @apply absolute left-14 m-2 min-w-max origin-left scale-0 rounded-md
+     bg-gray-900 p-2 text-xs font-bold text-white transition-all duration-100;
+  }
+}
