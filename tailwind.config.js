@@ -8,9 +8,17 @@ module.exports = {
   // Others
   darkMode: false,
   theme: {
+    // Custom screens size for responsiveness
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px'
+    },
     extend: {
       // Custom colors (usable directly in .tsx files & overwrite tailwind default colors)
       colors: {
+        // Used in `_12_tlwdcss_basics`
         gray: {
           900: '#202225',
           800: '#2f3136',
@@ -21,6 +29,16 @@ module.exports = {
           200: '#ebedef',
           100: '#f2f3f5',
         },
+
+        // Used in `_13_tlwdcss_homepage`
+        brightRed: 'hsl(12, 88%, 59%)',
+        brightRedLight: 'hsl(12, 88%, 69%)',
+        brightRedSupLight: 'hsl(12, 88%, 95%)',
+        darkBlue: 'hsl(228, 39%, 23%)',
+        darkGrayishBlue: 'hsl(227, 12%, 61%)',
+        veryDarkBlue: 'hsl(233, 12%, 13%)',
+        veryPaleRed: 'hsl(13, 100%, 96%)',
+        veryLightGray: 'hsl(0, 0%, 98%)',
       },
     },
   },
