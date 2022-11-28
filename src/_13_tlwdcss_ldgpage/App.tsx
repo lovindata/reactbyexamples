@@ -4,6 +4,8 @@ import "./App.css";
 import { NavBar } from "./components/NavBar";
 import { HeroSection } from "./components/HeroSection";
 import { FeatureSection } from "./components/FeatureSection";
+import { TestimonialSection } from "./components/TestimonialSection";
+import { CallToAction } from "./components/CallToAction";
 
 function App(): JSX.Element {
   return (
@@ -11,6 +13,8 @@ function App(): JSX.Element {
       <NavBar />
       <HeroSection />
       <FeatureSection />
+      <TestimonialSection />
+      <CallToAction />
     </div>
   );
 }
