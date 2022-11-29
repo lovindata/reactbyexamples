@@ -2,7 +2,7 @@ import logo from "../img/logo.svg";
 
 // Component
 export const NavBar = () => (
-  <nav className="container mx-auto p-6">
+  <nav className="container relative mx-auto p-6">
     {/* Within the navigation bar */}
     <div className="flex items-center justify-between">
       {/* Logo */}
@@ -33,6 +33,12 @@ export const NavBar = () => (
       <div className="hidden cursor-pointer rounded-full bg-brightRed px-6 pb-3 pt-2 text-white hover:bg-brightRedLight md:block">
         Get Started
       </div>
+
+      {/* Hamburger icon */}
+      <div className="md:hidden">TODO</div>
     </div>
+
+    {/* Hamburger menu */}
+    <div className="md:hidden">TODO</div>
   </nav>
 );
