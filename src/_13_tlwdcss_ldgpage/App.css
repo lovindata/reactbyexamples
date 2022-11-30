@@ -1,3 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* body refers to the tag <body></body> */
+body {
+  background-image: url("./img/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position: 90% -25%; /* Means x-axis and y-axis of the total screen (not viewport) */
+}
+
+/* #<someId> refers to the id provided on the tag <<someTag> id="<someId>"></<someTag>> */
+#cta {
+  background-image: url("./img/bg-simplify-section-desktop.svg");
+  background-repeat: no-repeat;
+}
+
+/* @media means taking only effect according a certain condition (here at maximum viewport of 576px) */
+@media (max-width: 576px) {
+  body {
+    background-position: 50px -50px;
+    background-size: 500px;
+  }
+  #cta {
+    background-image: url("./img/bg-simplify-section-mobile.svg");
+  }
+}
+
+/* Hamburger definition */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.hamburger-top,
+.hamburger-mid,
+.hamburger-bot {
+  position: absolute; /* Superposition according parent tag only */
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  transition: all 0.5s;
+}
+.hamburger-mid {
+  transform: translateY(7px);
+}
+.hamburger-bot {
+  transform: translateY(14px);
+}
+
+/* Hamburger animation */
+.hamburger-open .hamburger-top {
+  /* 👆 It means when the both classNames are existing together then apply this 👇 */
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.hamburger-open .hamburger-mid {
+  display: none;
+}
+.hamburger-open .hamburger-bot {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}

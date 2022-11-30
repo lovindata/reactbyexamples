@@ -66,3 +66,5 @@ So do not hesitate to fork this git repository and execute them on your own comp
 # LogBook 🚧
 
 - Continue this course [Tailwind Crash Course](https://youtu.be/dFgzHOX84xQ?t=672)
+  - Review all + Add all the comments
+  - Then modify the content table
