@@ -6,6 +6,7 @@ module.exports = {
   ],
 
   // Others
+  darkMode: "class",
   theme: {
     // Re-defined viewport size variants for responsiveness
     screens: {
