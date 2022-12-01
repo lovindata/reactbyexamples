@@ -8,6 +8,13 @@ export const NavBar = () => {
 
   // Render
   return (
+    /*
+    - `container` means fixing content element `max-width` to a breakpoint of the viewport `min-width`
+    - `mx-auto` taking all the possible margin left and right equally (in this case it centers the container)
+    - `p-6` padding of 6
+    - `justify-between` means spacing according the main axis equally the tag in the flex (but no spacing on the border tag)
+    - `cursor-pointer` means showing a clickable cursor
+    */
     <nav className="container mx-auto p-6">
       {/* Within the navigation bar */}
       <div className="flex items-center justify-between">
@@ -16,7 +23,9 @@ export const NavBar = () => {
           <img src={logo} alt="" className="cursor-pointer" />
         </div>
 
-        {/* Menus */}
+        {/* Menus
+        - `space-x-6` means spacing the sub tags horizontally
+        */}
         <div className="hidden space-x-6 md:flex">
           <a href="/#" className="hover:text-darkGrayishBlue">
             Pricing
@@ -35,7 +44,10 @@ export const NavBar = () => {
           </a>
         </div>
 
-        {/* Get started button*/}
+        {/* Get started button
+        - `block` means processing the text inside as a whole (= cannot break between 2 lines or cannot have suffix text)
+        - `rounded-full` means border-radius on each corner
+        */}
         <div className="hidden cursor-pointer rounded-full bg-brightRed px-6 pb-3 pt-2 text-white hover:bg-brightRedLight md:block">
           Get Started
         </div>
@@ -54,7 +66,7 @@ export const NavBar = () => {
       <div className="md:hidden">
         {/*
       - `left-6` means content of 24px on the left (idem idea for right)
-      - `absolute` means only relative to its parent tag (like the other tags does not exists == superposition)
+      - `absolute` means only relative to its parent tag (like starting a new page according the parent tag == superposition)
       */}
         <div
           className={`absolute left-6 right-6 mt-10 ${

@@ -24,7 +24,9 @@ export const Footer = () => (
         </div>
       </div>
 
-      {/* Links */}
+      {/* Links
+      - `justify-around` spacing according the `flex` main axis equally on left & right for each tag in the `flex`
+      */}
       <div className="flex flex-row justify-around space-x-32 text-white">
         <div className="flex flex-col space-y-3">
           <a href="/#">Home</a>

@@ -40,7 +40,7 @@ So do not hesitate to fork this git repository and execute them on your own comp
 |                           |                                                                                                                                                                                      | [Redux Toolkit (RTK)](src/_10_reduxtoolkit/App.tsx)         |
 | **Quick projects**        | _This part contains completed good exercices to practice._                                                                                                                           | [Todo List Application](src/_3_todolistapp/App.tsx)         |
 |                           |                                                                                                                                                                                      | [Social Media Application](src/_11_e2ecrudapp/App.tsx)      |
-| **Tailwinds CSS**         | _This part focuses on main styling concepts with Tailwind CSS._                                                                                                                      | [Basics](src/_12_tlwdcss_basics/App.tsx)                    |
+| **Tailwinds CSS**         | _This part focuses on main styling concepts for `React components` and how to arrange them in a page with Tailwind CSS._                                                             | [Basics](src/_12_tlwdcss_basics/App.tsx)                    |
 |                           |                                                                                                                                                                                      | [Landing Page Application](src/_13_tlwdcss_ldgpage/App.tsx) |
 
 # References 📚
@@ -62,9 +62,3 @@ So do not hesitate to fork this git repository and execute them on your own comp
 - [Fireship - CSS Flexbox in 100 Seconds](https://www.youtube.com/watch?v=K74l26pE4YA)
 - [CSS - Position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
 - [Margin auto for positioning elements in flex](https://stackoverflow.com/questions/33924655/position-last-flex-item-at-the-end-of-container)
-
-# LogBook 🚧
-
-- Continue this course [Tailwind Crash Course](https://youtu.be/dFgzHOX84xQ?t=672)
-  - Review all + Add all the comments
-  - Then modify the content table

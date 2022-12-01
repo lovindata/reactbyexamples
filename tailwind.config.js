@@ -6,9 +6,8 @@ module.exports = {
   ],
 
   // Others
-  darkMode: false,
   theme: {
-    // Custom screens size for responsiveness
+    // Re-defined viewport size variants for responsiveness
     screens: {
       sm: '480px',
       md: '768px',

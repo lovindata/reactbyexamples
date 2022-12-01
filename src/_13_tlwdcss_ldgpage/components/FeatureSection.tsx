@@ -2,7 +2,10 @@
 export const FeatureSection = () => (
   <section>
     <div className="container mx-auto mt-10 flex flex-col space-y-12 px-4 md:flex-row md:space-y-0">
-      {/* Left item */}
+      {/* Left item
+      - `text-center` means centering the text content according itself tag content
+      - `text-left` another texting layout like `text-center` for the text content according itself tag content
+      */}
       <div className="flex flex-col space-y-12 md:w-1/2">
         <h2 className="max-w-md text-center text-4xl font-bold md:text-left">What's different about Manage?</h2>
         <p className="max-w-sm text-center text-darkGrayishBlue md:text-left">
@@ -47,8 +50,10 @@ interface ItemProps {
 }
 const Item = (props: ItemProps) => (
   <div className="flex flex-col space-y-3">
-    {/* Header */}
-    <div className="bg rounded-l-full bg-brightRedSupLight md:bg-transparent">
+    {/* Header
+    - `bg-transparent` means making the background transparent
+    */}
+    <div className="rounded-l-full bg-brightRedSupLight md:bg-transparent">
       <div className="flex items-center space-x-2 md:space-x-6">
         {/* Rounded index */}
         <div className="mb-auto rounded-full bg-brightRed px-4 py-2 text-white md:py-1">{props.index}</div>

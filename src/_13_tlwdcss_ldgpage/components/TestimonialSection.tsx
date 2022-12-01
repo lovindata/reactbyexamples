@@ -60,6 +60,7 @@ const Testimonial = (props: TestmonialProps) => {
     </div>
   ) : (
     // Else show only when middle viewport size
+    // - `-mt-14` means pulling out the tag of its static position (= imagine having margin but inside the padding & content instead of outside)
     <div className="hidden flex-col items-center space-y-6 rounded-lg bg-veryLightGray p-6 md:flex md:w-1/3">
       <img src={props.img} alt="" className="-mt-14 w-16" />
       <h3 className="text-lg font-bold">{props.names}</h3>

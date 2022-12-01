@@ -37,13 +37,13 @@ body {
 .hamburger-top,
 .hamburger-mid,
 .hamburger-bot {
-  position: absolute; /* Superposition according parent tag only */
-  top: 0;
+  position: absolute; /* Superposition according parent tag with `relative` only */
+  top: 0; /* Absolute positionning according the `relative` parent */
   left: 0;
   width: 24px;
   height: 2px;
   background-color: black;
-  transition: all 0.5s;
+  transition: all 0.5s; /* It means when the className of the applied tag change then do transition of 0.5s */
 }
 .hamburger-mid {
   transform: translateY(7px);
