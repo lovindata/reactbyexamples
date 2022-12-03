@@ -28,7 +28,7 @@ function App(): JSX.Element {
     // When component unmount
     return () => console.log("UNMOUNT happened!");
     //}, []); // 👈 AT_START (You can comment this line and try the line below 👇)
-  }, [generatedExcuse]); // ELEMENT_UPDATE ⚠️ If you put `[generatedExcuse]` instead of `[]` the effect inside will happen everytime `generatedExcuse` is mounted
+  }, [generatedExcuse]); // ELEMENT_UPDATE ⚠️ If you put `[generatedExcuse]` the effect happens everytime `generatedExcuse` mounts
   //}); // ALWAYS (it means non stop)
 
   // Render

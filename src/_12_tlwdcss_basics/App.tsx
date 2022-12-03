@@ -1,12 +1,19 @@
 import "./App.css";
 import { SideBar } from "./components/SideBar";
 import { DarkMode } from "./components/DarkMode";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // Main component
 function App(): JSX.Element {
-  // Logic
-  const [isDark, setSwitchDark] = useState(true);
+  // Initalize DarkMode state
+  const localStorageIsDark = localStorage.getItem("isDark"); // 👈 `localStorage` is key-value pair with value in string only
+  const initialIsDark = localStorageIsDark === null || localStorageIsDark !== "false" ? true : false;
+  const [isDark, setSwitchDark] = useState(initialIsDark);
+
+  // Handler for keeping DarkMode setting
+  useEffect(() => {
+    localStorage.setItem("isDark", isDark ? "true" : "false"); // 👈 You can set a key-value like this
+  }, [isDark]);
 
   // Render
   return (
