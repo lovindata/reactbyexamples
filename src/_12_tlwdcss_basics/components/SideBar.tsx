@@ -10,7 +10,7 @@ export const SideBar = () => {
       - `flex-col` main axis vertically & cross axis horizontally
       - `h-screen` take the entire height of the viewport
       */
-    <div className="top-0 left-0 m-0 flex h-screen w-16 flex-col bg-gray-900 text-white shadow-lg">
+    <div className="flex h-screen w-16 flex-col justify-center bg-gray-100 shadow-lg dark:bg-gray-900">
       <SideBarIcon icon={<FaFire size="28" />} text={"tooltip fire 🔥"} />
       <SideBarIcon icon={<BsPlus size="32" />} text={"tooltip plus 🌈"} />
       <SideBarIcon icon={<BsFillLightningFill size="20" />} text={"tooltip light ✨"} />

@@ -12,10 +12,11 @@
     - `rounded-<?>` means changing the border
     - `transition-all` means transition from the static to the variant state
     - `cursor-pointer` means changing the user cursor
+    - `flex-shrink-0` means defined `flex` not shrinkable
     */
-    @apply relative mx-auto mt-2 mb-2 flex h-12 w-12 cursor-pointer
-    items-center justify-center rounded-3xl bg-gray-800 text-green-500 shadow-lg
-    transition-all duration-300 ease-linear hover:rounded-xl hover:bg-green-600 hover:text-white;
+    @apply relative mx-auto my-2 flex h-12 w-12 flex-shrink-0 cursor-pointer items-center
+    justify-center rounded-3xl bg-gray-200 text-green-500 shadow-xl transition-all
+    duration-300 ease-linear hover:rounded-xl hover:bg-green-600 hover:text-black dark:bg-gray-800 dark:hover:text-white;
   }
 
   .sidebar-tooltip {
@@ -26,6 +27,6 @@
     - `scale-0` means all size 0 (in percentage)
     */
     @apply absolute left-14 m-2 min-w-max origin-left scale-0 rounded-md
-     bg-gray-900 p-2 text-xs font-bold text-white transition-all duration-100;
+    bg-gray-100 p-2 text-xs font-bold text-black transition-all duration-100 dark:bg-gray-900 dark:text-white;
   }
 }
